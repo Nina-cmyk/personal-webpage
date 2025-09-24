@@ -1,0 +1,121 @@
+<!-- 414771476_林采霓_0919_課堂作業.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>414771476 林采霓 0919 課堂作業</title>
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --primary:#2563eb;
+      --accent:#f59e0b;
+      --ring: rgba(37,99,235,.22);
+      --shadow: 0 12px 30px rgba(16,24,40,.08);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC","Helvetica Neue",Arial;
+      color:var(--text); background:var(--bg); line-height:1.75;
+    }
+    .container{max-width:980px;margin:0 auto;padding:28px 18px}
+    header.hero{
+      background: linear-gradient(135deg, var(--primary), #7c3aed);
+      color:#fff; border-radius:calc(var(--radius) + 6px);
+      padding:28px 26px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+    }
+    header.hero::after{
+      content:""; position:absolute; inset:auto -70px -70px auto;
+      width:230px;height:230px;border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,0));
+      transform: rotate(20deg);
+    }
+    .hero h1{margin:0 0 6px; font-size: clamp(28px,4vw,40px)}
+    .hero p{margin:0; color:#e5e7eb}
+    .info{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .chip{background:#fff; color:#111827; border:1px dashed #c7d2fe; padding:6px 10px; border-radius:999px; font-size:13px}
+    .grid{display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top:20px}
+    .card{
+      background:var(--card); border-radius:var(--radius); padding:20px 20px;
+      box-shadow:var(--shadow); border:1px solid #eef2ff;
+    }
+    .section-title{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.4px}
+    .dot{width:10px;height:10px;border-radius:50%; background:var(--accent); box-shadow:0 0 0 6px rgba(245,158,11,.18)}
+    .intro p{margin:.25rem 0}
+    ul.clean{list-style:none;padding-left:0;margin:10px 0 0}
+    ul.clean li{
+      background:#f9fafb; border:1px solid #e5e7eb; border-radius:12px;
+      padding:10px 12px; margin:8px 0; display:flex; gap:10px; align-items:center;
+    }
+    ul.clean li::before{content:"✓"; color:var(--primary); font-weight:700}
+    a.link{color:var(--primary); text-decoration:none; border-bottom:2px solid rgba(37,99,235,.25); padding:2px 0}
+    a.link:hover{border-color:var(--primary)}
+    .gallery{display:grid; gap:12px; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); margin-top:8px}
+    .gallery img{width:100%; height:200px; object-fit:cover; border-radius:14px; border:1px solid #e5e7eb; box-shadow:var(--shadow); transition:transform .2s ease}
+    .gallery img:hover{transform:translateY(-2px)}
+    footer{margin-top:26px; text-align:center; color:var(--muted); font-size:14px}
+    .highlight{color:#7c3aed; font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>自我介紹｜林采霓</h1>
+      <p>喜歡程式設計與新科技的學生，持續練功中。</p>
+      <div class="info">
+        <span class="chip">學號：414771476</span>
+        <span class="chip">日期：09/19</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- 自我介紹 -->
+      <section class="card intro">
+        <div class="section-title"><span class="dot"></span><span>關於我</span></div>
+        <p style="color:#1f2937;">大家好，我是 <strong style="color:#2563eb;">林采霓</strong>。喜歡程式設計，習慣主動了解並追蹤最新科技動態。</p>
+        <p style="color:#374151;">課餘時喜歡探索美食、品紅酒、看電影、聽音樂，也樂於閱讀各類書籍與文章。</p>
+        <p style="color:#374151;">音樂偏好西洋流行，特別喜歡 <span class="highlight">Taylor Swift</span> 與 <span class="highlight">Adele</span>。</p>
+        <p style="color:#374151;">未來期許成為一名優秀的軟體工程師，運用技術為社會帶來正向影響。</p>
+      </section>
+
+      <!-- 興趣清單 -->
+      <section class="card">
+        <div class="section-title"><span class="dot"></span><span>我的興趣</span></div>
+        <ul class="clean">
+          <li>探索美食</li>
+          <li>品紅酒</li>
+          <li>看電影</li>
+          <li>聽音樂</li>
+          <li>閱讀各類書籍與文章</li>
+        </ul>
+      </section>
+
+      <!-- 連結元素 -->
+      <section class="card">
+        <div class="section-title"><span class="dot"></span><span>相關連結</span></div>
+        <p>我最近用的網站：</p>
+        <ul>
+          <li><a class="link" href="https://youtu.be/S_iPfU3wK2Q?si=TYUmBiFcX3V1RLK5" target="_blank" rel="noopener">YouTube：用 VSCode 執行 HTML（macOS）</a></li>
+          <li><a class="link" href="https://github.com/Nina-cmyk" target="_blank" rel="noopener">GitHub：我的個人頁（歡迎追蹤）</a></li>
+        </ul>
+      </section>
+
+      <!-- 興趣圖片 -->
+      <section class="card">
+        <div class="section-title"><span class="dot"></span><span>我的興趣圖片</span></div>
+        <div class="gallery">
+          <img src="https://cdn.omlet.com/images/originals/breed_abyssinian_cat.jpg" alt="貓貓" />
+          <img src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_FMjpg_UX1000_.jpg" alt="電影 LALALAND 海報" />
+        </div>
+      </section>
+    </div>
+
+    <footer>© 2025 林采霓・本頁為 0919 課堂作業</footer>
+  </div>
+</body>
+</html>
