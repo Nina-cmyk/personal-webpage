@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>個人課表</title>
+  <style>
+    body { font-family: "Microsoft JhengHei", sans-serif; background: #f7fbf7; margin: 20px; }
+    table { width: 100%; border-collapse: collapse; background: rgba(255, 255, 255, 0.7); }
+    caption { font-size: 22px; font-weight: bold; color: #2f5d3b; padding: 10px; }
+    th, td {
+      border: 1px solid #b6d4b6;
+      padding: 8px;
+      text-align: center;
+    }
+    th { background: #e3f0e3; color: #214b2e; }
+    .time { font-weight: bold; color: #2f5d3b; background: #f0f8f0; }
+    .subject { color: #0033cc; font-weight: bold; }
+    .lab { color: #b22222; font-style: italic; }
+
+    body{
+    background:
+    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    url('elf.png') center/cover no-repeat fixed;
+    }
+    .wrap{ backdrop-filter: blur(2px); background: rgba(255,255,255,.78); }
+
+  </style>
+</head>
+<body>
+  <table>
+    <caption>課表</caption>
+    <thead>
+      <tr>
+        <th>節次＼星期</th>
+        <th>一</th><th>二</th><th>三</th><th>四</th><th>五</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time">一</td>
+        <td></td><td></td>
+        <td><span class="subject">人工智慧導論</span><br>張明弘_E314</td>
+        <td><span class="subject">校園與社區服務學習</span><br>許家豪</td>
+        <td><span class="subject">程式設計(一)</span><br>邱普運_E314</td>
+      </tr>
+      <tr>
+        <td class="time">二</td>
+        <td><span class="subject">離散數學</span><br>陶逖_E515</td>
+        <td></td>
+        <td><span class="subject">人工智慧導論</span><br>張明弘_E314</td>
+        <td><span class="subject">校園與社區服務學習</span><br>許家豪</td>
+        <td><span class="subject">程式設計(一)</span><br>邱普運_E314</td>
+      </tr>
+      <tr>
+        <td class="time">三</td>
+        <td><span class="subject">離散數學</span><br>陶逖_E515</td>
+        <td><span class="subject">微積分</span><br>秦御庭_E411</td>
+        <td><span class="subject">程式設計(一)</span><br>邱普運_E314</td>
+        <td><span class="subject">男、女生體育</span><br>范姜逸敏</td>
+        <td><span class="subject">英文(一)</span><br>范美惠_L302</td>
+      </tr>
+      <tr>
+        <td class="time">四</td>
+        <td><span class="subject">離散數學</span><br>陶逖_E515</td>
+        <td><span class="subject">微積分</span><br>秦御庭_E411</td>
+        <td></td>
+        <td><span class="subject">男、女生體育</span><br>范姜逸敏</td>
+        <td><span class="subject">英文(一)</span><br>范美惠_L302</td>
+      </tr>
+      <tr>
+        <td class="time">五</td>
+        <td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td class="time">六</td>
+        <td><span class="subject">程式設計(一)</span><br>助_教_E231</td>
+        <td><span class="subject">離散數學</span><br>助_教_E405</td>
+        <td><span class="subject">人工智慧概論</span><br>嚴建和_E509</td>
+        <td><span class="subject">微積分</span><br>秦御庭_E514</td>
+        <td><span class="subject">大一AI實驗</span><br>曾秋桂_G102</td>
+      </tr>
+      <tr>
+        <td class="time">七</td>
+        <td><span class="subject">宇宙的探索</span><br>潘璽安_S215</td>
+        <td><span class="subject">人工智慧概論</span><br>嚴建和_E404</td>
+        <td><span class="subject">人工智慧概論</span><br>嚴建和_E509</td>
+        <td></td>
+        <td><span class="subject">大一AI實驗</span><br>曾秋桂_G102</td>
+      </tr>
+      <tr>
+        <td class="time">八</td>
+        <td><span class="subject">宇宙的探索</span><br>潘璽安_S215</td>
+        <td><span class="subject">人工智慧概論</span><br>助_教_E236</td>
+        <td></td><td></td>
+        <td><span class="subject">大一AI實驗</span><br>曾秋桂_G102</td>
+      </tr>
+      <tr>
+        <td class="time">九</td>
+        <td></td>
+        <td><span class="subject">英文(一)</span><br>助_教_V102</td>
+        <td></td>
+        <td><span class="subject">微積分</span><br>助_教_E310</td>
+        <td><span class="subject">大學學習</span><br>朱政安_E512</td>
+      </tr>
+      <tr>
+        <td class="time">十</td>
+        <td></td><td></td><td></td><td></td>
+        <td><span class="subject">大學學習</span><br>朱政安_E512</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
